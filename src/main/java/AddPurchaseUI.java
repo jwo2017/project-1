@@ -278,7 +278,7 @@ public class AddPurchaseUI {
 
                 switch (javaApp.getInstance().getDataAdapter().savePurchase(purchase)) {
                     case SQLDataBase.PURCHASE_DUPLICATE_ERROR:
-                        JOptionPane.showMessageDialog(null, "Purchase NOT added successfully! Duplicate product ID!");
+                        JOptionPane.showMessageDialog(null, "Purchase NOT added successfully! Duplicate purchase ID!");
                     default:
                         JOptionPane.showMessageDialog(null, "Purchase added successfully!" + purchase);
                 }
